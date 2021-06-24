@@ -1,1 +1,1 @@
-pm2 start /var/www/html/app.py --name flask-app --interpreter python3
+pm2 start /var/www/html/flask-app/app.py --name flask-app --interpreter python3
