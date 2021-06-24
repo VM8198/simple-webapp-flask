@@ -1,4 +1,4 @@
 #!/bin/bash
 sudo apt update
 sudo apt install python3-pip
-pip install -r /var/flask-app/requirements.txt
+pip install -r /var/requirements.txt
