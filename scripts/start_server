@@ -1,1 +1,1 @@
-FLASK_APP=/var/flask-app/app.py flask run --host=0.0.0.0
+pm2 start /var/www/html/app.py --name flask-app --interpreter python3
