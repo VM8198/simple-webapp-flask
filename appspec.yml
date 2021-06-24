@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: .
-    destination: /var/flask-app
+    destination: /var/www/html/flask-app
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
@@ -14,5 +14,9 @@ hooks:
       runas: root
   ApplicationStart:
     - location: scripts/start_server
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server
       timeout: 300
       runas: root
